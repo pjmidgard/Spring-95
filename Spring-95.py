@@ -363,6 +363,10 @@ class compression:
                                             ei=ei+2
                                             
                                             Number_Row_Count=12
+                                            Number_Row_Count=Number_Row_Count+1
+                                            if Number_Row_Count==80:
+                                                Number_Row_Count=12
+                                                
                                             
                                             Number_Row_Count_str=str(Number_Row_Count)
                                                                                         
