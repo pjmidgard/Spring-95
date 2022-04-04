@@ -24,13 +24,13 @@ class compression:
                 def Forest_Extract(Number_Row2,Number_Row_Count):
                         Number_Row_Count1=int(Number_Row2)
                         if Number_Row_Count1>Number_Row_Count:                  
-                                Number_Row_Count1=Number_Row_Count-11
+                                Number_Row_Count1=Number_Row_Count1-11
                                                             
                                 if Number_Row_Count1<11:
                                         Number_Row_Count1=Number_Row_Count1+88
 
                         elif Number_Row_Count1<Number_Row_Count:                  
-                                Number_Row_Count1=Number_Row_Count+11
+                                Number_Row_Count1=Number_Row_Count1+11
                                                             
                                 if Number_Row_Count1>87:
                                         #print(Number_Row_Count1)
@@ -41,19 +41,20 @@ class compression:
                 def Forest(Number_Row2,Number_Row_Count):
 
                         Number_Row_Count1=int(Number_Row2)
-                        if Number_Row_Count1>Number_Row_Count:                  
-                                Number_Row_Count1=Number_Row_Count+11
+                       
+                        if Number_Row_Count1>Number_Row_Count:
+                                                
+                                Number_Row_Count1=Number_Row_Count1+11
+                                
                                                             
-                                if Number_Row_Count1>87:
-                                        Number_Row_Count1=Number_Row_Count1-88
+                               
 
                         elif Number_Row_Count1<Number_Row_Count:                  
-                                Number_Row_Count1=Number_Row_Count-11
+                                Number_Row_Count1=Number_Row_Count1-11
+                               
                                                             
-                                if Number_Row_Count1<11:
-                                        #print(Number_Row_Count1)
-                                        Number_Row_Count1=Number_Row_Count1+88
-                                        #print(Number_Row_Count1)
+                                
+                           #print(Number_Row_Count1)
                                                   
                                                     
                         Number_Row_Count_str1=str(Number_Row_Count1)
@@ -285,7 +286,7 @@ class compression:
                                     
                                     Number_Row1=""
                                     Number_Row6=""
-                                    Number_Row_Count=12
+                                    Number_Row_Count=11
                                     Number_Row_Count_str3=""
                                     Number_Row=str(Number_of_the_file)
                                     Number_Row_Count_str=str(Number_Row_Count)
@@ -311,6 +312,7 @@ class compression:
 
                                             elif Number_Row2[0:1]==Number_Row_Count_str and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
                                                     Number_Row6=Forest(Number_Row2,Number_Row_Count)
+                                                    print(Number_Row6)
                                                     Number_Row1=Number_Row1+Number_Row6
                                                     if Number_Row6[0:1]==Number_Row_Count_str[0:1]:
                                                             compress_or_not_compress=2 
@@ -323,7 +325,8 @@ class compression:
 
 
                                             elif Number_Row2[1:2]==Number_Row_Count_str and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
-                                                    Number_Row6=Forest(Number_Row2,Number_Row_Count)
+                                                    Number_Row6=Forest(Number_Row2,Number_Row_Count) 
+                                                    print(Number_Row6)
                                                     Number_Row1=Number_Row1+Number_Row6
                                                     if Number_Row6[0:1]==Number_Row_Count_str[0:1]:
                                                             compress_or_not_compress=2 
@@ -347,12 +350,9 @@ class compression:
                                                             
                                             else:
                                                     
-                                                    Number_Row6=Forest(Number_Row2,Number_Row_Count)
+                                                    Number_Row6=Number_Row2
                                                     Number_Row1=Number_Row1+Number_Row6
-                                                    if Number_Row6[0:1]==Number_Row_Count_str[0:1]:
-                                                            compress_or_not_compress=2 
-                                                    if Number_Row6[1:2]==Number_Row_Count_str[0:1]:
-                                                            compress_or_not_compress=2 
+                                                     
                                                     
                                                     
                                                     
@@ -362,10 +362,11 @@ class compression:
                                                     
                                             ei=ei+2
                                             
-                                            Number_Row_Count=12
+                                            Number_Row_Count=11
                                             Number_Row_Count=Number_Row_Count+1
                                             if Number_Row_Count==80:
-                                                Number_Row_Count=12
+                                                Number_Row_Count=11
+                                                
                                                 
                                             
                                             Number_Row_Count_str=str(Number_Row_Count)
