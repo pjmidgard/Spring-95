@@ -309,21 +309,21 @@ class compression:
                                                     Number_Row1=Number_Row1+Number_Row6
                                                     
 
-                                            elif Number_Row2[0:1]==Number_Row_Count_str and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
+                                            elif Number_Row2[0:1]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
                                                     Number_Row6=Forest(Number_Row2,Number_Row_Count)
                                                     Number_Row1=Number_Row1+Number_Row6
                                                     if Number_Row6[0:1]==Number_Row_Count_str[0:1]:
-                                                            compress_or_not_compress==2 
+                                                            compress_or_not_compress=2 
                                                             
                                                     
                                                             
 
 
-                                            elif Number_Row2[1:2]==Number_Row_Count_str and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
+                                            elif Number_Row2[1:2]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
                                                     Number_Row6=Forest(Number_Row2,Number_Row_Count)
                                                     Number_Row1=Number_Row1+Number_Row6
                                                     if Number_Row6[0:1]==Number_Row_Count_str[0:1]:
-                                                            compress_or_not_compress==2 
+                                                            compress_or_not_compress=2
                                                     
                                                     
 
@@ -343,10 +343,10 @@ class compression:
                                                             
                                             else:
                                                     
-                                                    Number_Row6=Forest(Number_Row2,Number_Row_Count)
+                                                    Number_Row6=Number_Row2
                                                     Number_Row1=Number_Row1+Number_Row6
-                                                    if Number_Row6[0:1]==Number_Row_Count_str[0:1]:
-                                                            compress_or_not_compress==2 
+                     
+                                                            
                                                     
                                                     
 
